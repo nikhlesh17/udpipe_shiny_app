@@ -1,11 +1,11 @@
 try(require("igraph")||install.packages("igraph"))
 try(require("wordcloud")||install.packages("wordcloud"))
-try(require("qgraph")||install.packages("qgraph"))
+try(require("ggraph")||install.packages("ggraph"))
 try(require("udpipe")||install.packages("udpipe"))
 try(require("dplyr")||install.packages("dplyr"))
 try(require("magittr")||install.packages("magittr"))
 try(require("shiny")||install.packages("shiny"))
-try(require("shinycssfolders")||install.packages("shinycssfolders"))
+try(require("shinycssfolders")||devtools::install_github('andrewsali/shinycssloaders'))
 
 library(igraph)
 library(ggraph)
