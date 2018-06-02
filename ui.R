@@ -80,7 +80,12 @@ shinyUI(
                                              be exported but the file name and location would have to be provided."))),
                                p(),
                                p('Important R packages required include ',span(strong("Shiny, dplyr, udpipe, igraph, ggraph,
-                                             wordcloud,shinycssloaders,magittr")))),
+                                             wordcloud,shinycssloaders,magittr"))),
+                               p(),
+                               p(span(strong('Team Details--'))),
+                               p('Nikhlesh Daga - 11910059'),
+                               p('Kapil Mahajan - 11910074'),
+                               p('Shailendra Kumar - 11910103')),
                   
                       tabPanel("Annotated output", 
                                dataTableOutput('x') %>% withSpinner(color="#0dc5c1"),
