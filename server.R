@@ -20,8 +20,8 @@ shinyServer(function(input, output) {
 # Function to annotate the read-in data
 annotated_doc <- function(){
 
-  english_model = udpipe_load_model("https://github.com/nikhlesh17/udpipe_shiny_app/blob/master/english-ud-2.0-170801.udpipe")
-  # 
+  english_model = udpipe_load_model("english-ud-2.0-170801.udpipe")
+  # english_model = udpipe_load_model("https://github.com/nikhlesh17/udpipe_shiny_app/blob/master/english-ud-2.0-170801.udpipe")
   annotated_output <- data.frame(udpipe_annotate(english_model, x = Dataset()$txt))
   annotated_output <- annotated_output %>%
                       select(-sentence)
